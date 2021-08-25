@@ -29,9 +29,17 @@ const Header = () => {
 const MainHeader = styled.div`
   padding: 0 32px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 250px;
+
 `;
 
-const Nav = styled.nav``;
+const Nav = styled.nav`
+  display: flex;
+
+`;
 
 const NavLink = styled.a`
   font-size: 1.125rem;
@@ -43,6 +51,8 @@ const NavLink = styled.a`
   &:first-of-type {
     color: ${COLORS.secondary};
   }
+
+  margin: 16px;
 `;
 
 export default Header;
